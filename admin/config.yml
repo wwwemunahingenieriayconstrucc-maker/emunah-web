@@ -1,15 +1,18 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: wwwemunahingenieriayconstrucc-maker/emunah-web
   branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
 
 media_folder: "images"
 public_folder: "/images"
 
-site_url: https://emunah.netlify.app
-display_url: https://emunah.netlify.app
-logo_url: https://emunah.netlify.app/admin/logo.png
+site_url: https://emunah-ingenieriayconstruccion.netlify.app
+display_url: https://emunah-ingenieriayconstruccion.netlify.app
+logo_url: https://emunah-ingenieriayconstruccion.netlify.app/admin/logo.png
 
-locale: 'es'
+locale: "es"
 
 collections:
   # ===== CONTENIDO DEL SITIO =====
@@ -123,7 +126,7 @@ collections:
       - { name: "tipo", label: "Tipo (ej: Edificación, Pavimentación)", widget: "string" }
       - { name: "imagen", label: "Foto del proyecto", widget: "image", required: false }
 
-  # ===== BLOG (OPCIONAL) =====
+  # ===== BLOG =====
   - name: "blog"
     label: "Blog / Noticias"
     label_singular: "Artículo"
