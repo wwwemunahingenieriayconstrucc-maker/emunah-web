@@ -1,0 +1,139 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+site_url: https://emunah.netlify.app
+display_url: https://emunah.netlify.app
+logo_url: https://emunah.netlify.app/admin/logo.png
+
+locale: 'es'
+
+collections:
+  # ===== CONTENIDO DEL SITIO =====
+  - name: "contenido"
+    label: "Contenido del Sitio"
+    files:
+      # --- HERO PRINCIPAL ---
+      - name: "hero"
+        label: "Sección Principal (Hero)"
+        file: "data/hero.json"
+        fields:
+          - { name: "eyebrow", label: "Etiqueta superior", widget: "string", default: "11 años construyendo en el norte del Perú" }
+          - { name: "titulo_pre", label: "Título (parte normal)", widget: "string", default: "Ingeniería real que" }
+          - { name: "titulo_destacado", label: "Título (parte con degradado)", widget: "string", default: "no se queda en el papel." }
+          - { name: "descripcion", label: "Descripción", widget: "text", default: "Soluciones integrales en proyectos, ejecución de obras y capacitación profesional." }
+          - { name: "stat1_num", label: "Stat 1 - Número", widget: "string", default: "11+" }
+          - { name: "stat1_label", label: "Stat 1 - Texto", widget: "string", default: "Años de experiencia" }
+          - { name: "stat2_num", label: "Stat 2 - Número", widget: "string", default: "120+" }
+          - { name: "stat2_label", label: "Stat 2 - Texto", widget: "string", default: "Proyectos ejecutados" }
+          - { name: "stat3_num", label: "Stat 3 - Número", widget: "string", default: "500+" }
+          - { name: "stat3_label", label: "Stat 3 - Texto", widget: "string", default: "Profesionales capacitados" }
+
+      # --- NOSOTROS ---
+      - name: "nosotros"
+        label: "Sección Nosotros"
+        file: "data/nosotros.json"
+        fields:
+          - { name: "titulo", label: "Título", widget: "string", default: "11 años de ingeniería aplicada al campo peruano" }
+          - { name: "parrafo1", label: "Párrafo 1", widget: "text" }
+          - { name: "parrafo2", label: "Párrafo 2", widget: "text" }
+          - { name: "cita", label: "Frase destacada", widget: "text" }
+          - { name: "nombre_completo", label: "Nombre completo del fundador", widget: "string", default: "Ing. Freddy Jahaziel Rodriguez Cervera" }
+          - { name: "cargo", label: "Cargo", widget: "string", default: "Ingeniero Civil · Fundador EMUNAH" }
+          - { name: "credencial1", label: "Credencial 1", widget: "string", default: "11 años de experiencia" }
+          - { name: "credencial2", label: "Credencial 2", widget: "string", default: "CIP Habilitado" }
+          - { name: "foto", label: "Foto profesional (opcional)", widget: "image", required: false }
+
+      # --- CONTACTO ---
+      - name: "contacto"
+        label: "Datos de Contacto"
+        file: "data/contacto.json"
+        fields:
+          - { name: "whatsapp", label: "WhatsApp (sin +, ej: 51967247976)", widget: "string", default: "51967247976" }
+          - { name: "telefono_display", label: "Teléfono para mostrar", widget: "string", default: "+51 967 247 976" }
+          - { name: "correo", label: "Correo electrónico", widget: "string", default: "freddy_jahaziel@hotmail.com" }
+          - { name: "ubicacion", label: "Ubicación", widget: "string", default: "Piura, Perú" }
+          - { name: "horario", label: "Horario de atención", widget: "string", default: "Lun – Sáb · 8:00 a.m – 6:00 p.m" }
+          - { name: "facebook", label: "Link Facebook", widget: "string", required: false }
+          - { name: "instagram", label: "Link Instagram", widget: "string", required: false }
+          - { name: "youtube", label: "Link YouTube", widget: "string", required: false }
+          - { name: "linkedin", label: "Link LinkedIn", widget: "string", required: false }
+          - { name: "tiktok", label: "Link TikTok", widget: "string", required: false }
+
+  # ===== SERVICIOS =====
+  - name: "servicios"
+    label: "Servicios"
+    label_singular: "Servicio"
+    folder: "data/servicios"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "titulo", label: "Título del servicio", widget: "string" }
+      - { name: "descripcion", label: "Descripción", widget: "text" }
+      - { name: "tag", label: "Etiqueta (ej: CONSULTORÍA)", widget: "string" }
+      - name: "icono"
+        label: "Ícono"
+        widget: "select"
+        options: ["expediente", "construccion", "lupa", "capas", "topografia", "diagnostico"]
+        default: "expediente"
+      - { name: "orden", label: "Orden de aparición", widget: "number", default: 1 }
+      - { name: "activo", label: "Mostrar en la web", widget: "boolean", default: true }
+
+  # ===== CURSOS =====
+  - name: "cursos"
+    label: "Cursos"
+    label_singular: "Curso"
+    folder: "data/cursos"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "titulo", label: "Nombre del curso", widget: "string" }
+      - { name: "descripcion", label: "Descripción breve", widget: "text" }
+      - name: "nivel"
+        label: "Nivel"
+        widget: "select"
+        options: ["BÁSICO", "INTERMEDIO", "AVANZADO"]
+      - { name: "horas", label: "Horas totales", widget: "number" }
+      - { name: "clases", label: "Número de clases", widget: "number" }
+      - { name: "precio", label: "Precio (opcional)", widget: "string", required: false }
+      - name: "destacado"
+        label: "Destacado como"
+        widget: "select"
+        options: ["Ninguno", "MÁS VENDIDO", "NUEVO", "PRÓXIMAMENTE"]
+        default: "Ninguno"
+      - { name: "imagen", label: "Imagen del curso (opcional)", widget: "image", required: false }
+      - { name: "orden", label: "Orden de aparición", widget: "number", default: 1 }
+      - { name: "activo", label: "Mostrar en la web", widget: "boolean", default: true }
+
+  # ===== PROYECTOS REALIZADOS =====
+  - name: "proyectos"
+    label: "Proyectos Realizados"
+    label_singular: "Proyecto"
+    folder: "data/proyectos"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "titulo", label: "Nombre del proyecto", widget: "string" }
+      - { name: "ubicacion", label: "Ubicación", widget: "string" }
+      - { name: "anio", label: "Año", widget: "string" }
+      - { name: "descripcion", label: "Descripción", widget: "text" }
+      - { name: "tipo", label: "Tipo (ej: Edificación, Pavimentación)", widget: "string" }
+      - { name: "imagen", label: "Foto del proyecto", widget: "image", required: false }
+
+  # ===== BLOG (OPCIONAL) =====
+  - name: "blog"
+    label: "Blog / Noticias"
+    label_singular: "Artículo"
+    folder: "blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { name: "titulo", label: "Título del artículo", widget: "string" }
+      - { name: "fecha", label: "Fecha", widget: "datetime" }
+      - { name: "resumen", label: "Resumen corto", widget: "text" }
+      - { name: "imagen", label: "Imagen destacada", widget: "image", required: false }
+      - { name: "contenido", label: "Contenido del artículo", widget: "markdown" }
+      - { name: "autor", label: "Autor", widget: "string", default: "Ing. Freddy Jahaziel Rodriguez" }

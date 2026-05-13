@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>EMUNAH Ingeniería y Construcción E.I.R.L. | Expedientes Técnicos, Obras y Capacitación — Piura</title>
+<meta name="description" content="Empresa peruana de ingeniería con 11 años de experiencia. Expedientes técnicos, ejecución y supervisión de obras, peritajes y cursos virtuales en S10, Metrados y Programación. Atendemos desde Piura para todo el norte del Perú." />
+<meta name="author" content="Freddy Jahaziel Rodriguez Cervera — Ingeniero Civil" />
+<meta name="theme-color" content="#0a0f1a" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="EMUNAH Ingeniería y Construcción E.I.R.L." />
+<meta property="og:description" content="Soluciones integrales en ingeniería: expedientes técnicos, ejecución de obras y capacitación profesional. 11 años construyendo en el norte del Perú." />
+<meta property="og:locale" content="es_PE" />
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "EMUNAH Ingeniería y Construcción E.I.R.L.",
+  "description": "Empresa de ingeniería civil especializada en expedientes técnicos, ejecución de obras y capacitación profesional.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Piura",
+    "addressRegion": "Piura",
+    "addressCountry": "PE"
+  },
+  "telephone": "+51967247976",
+  "email": "freddy_jahaziel@hotmail.com",
+  "founder": {
+    "@type": "Person",
+    "name": "Freddy Jahaziel Rodriguez Cervera",
+    "jobTitle": "Ingeniero Civil",
+    "description": "11 años de experiencia en proyectos de ingeniería civil"
+  },
+  "areaServed": "Norte del Perú"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232563EB'/%3E%3Cstop offset='100%25' stop-color='%237C3AED'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='url(%23g)'/%3E%3Ctext x='50' y='70' text-anchor='middle' font-family='Sora' font-size='60' font-weight='800' fill='white'%3EE%3C/text%3E%3C/svg%3E" />
+
+<style>
+  :root {
+    --bg: #0a0f1a;
+    --bg-elev: #0d1320;
+    --bg-card: #131a2b;
+    --bg-card-hover: #1a2236;
+    --line: #1f2940;
+    --line-strong: #2d3a55;
+    --text: #f1f5fb;
+    --text-dim: #9aa5bd;
+    --text-mute: #6b7689;
+    --brand-blue: #2563eb;
+    --brand-blue-light: #60a5fa;
+    --brand-purple: #7c3aed;
+    --brand-purple-light: #a78bfa;
+    --accent-glow: rgba(124, 58, 237, 0.4);
+    --radius: 14px;
+    --radius-lg: 22px;
+    --radius-xl: 28px;
+    --shadow: 0 20px 60px -20px rgba(0,0,0,.6);
+    --gradient-brand: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+    --gradient-brand-light: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 { font-family: 'Sora', sans-serif; letter-spacing: -0.025em; line-height: 1.15; }
+  a { color: inherit; text-decoration: none; }
+  img, svg { max-width: 100%; display: block; }
+  button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+
+  .container { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+
+  /* ================= NAVBAR ================= */
+  .nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(10, 15, 26, 0.8);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    height: 72px;
+  }
+  .logo {
+    display: flex; align-items: center; gap: 12px;
+    font-family: 'Sora', sans-serif; font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+  .logo-mark {
+    width: 40px; height: 40px; border-radius: 11px;
+    background: var(--gradient-brand);
+    display: grid; place-items: center;
+    color: #ffffff; font-weight: 800; font-size: 20px;
+    box-shadow: 0 8px 24px -8px var(--accent-glow), inset 0 1px 0 rgba(255,255,255,0.15);
+    position: relative;
+  }
+  .logo-mark::before {
+    content: '';
+    position: absolute; inset: 1px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), transparent);
+    pointer-events: none;
+  }
+  .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
+  .logo-text strong { font-size: 17px; }
+  .logo-text small {
+    font-size: 9.5px; color: var(--text-mute); font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    margin-top: 2px;
+  }
+
+  .nav-links { display: flex; gap: 4px; align-items: center; }
+  .nav-links a {
+    padding: 8px 14px; border-radius: 8px;
+    color: var(--text-dim); font-size: 14.5px; font-weight: 500;
+    transition: all .2s ease;
+  }
+  .nav-links a:hover { color: var(--text); background: rgba(255,255,255,0.04); }
+
+  .nav-cta {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--gradient-brand); color: #ffffff;
+    padding: 11px 20px; border-radius: 10px;
+    font-weight: 600; font-size: 14px;
+    transition: all .2s ease;
+    box-shadow: 0 6px 20px -8px var(--accent-glow);
+  }
+  .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 12px 28px -8px var(--accent-glow); }
+  .nav-cta svg { width: 14px; height: 14px; transition: transform .2s; }
+  .nav-cta:hover svg { transform: translateX(2px); }
+
+  .menu-btn { display: none; color: var(--text); padding: 8px; }
+
+  /* ================= HERO ================= */
+  .hero {
+    position: relative;
+    padding: 80px 0 100px;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: ''; position: absolute; inset: 0;
+    background:
+      radial-gradient(900px 500px at 85% 10%, rgba(124,58,237,0.18), transparent 60%),
+      radial-gradient(600px 400px at 15% 40%, rgba(37,99,235,0.12), transparent 60%);
+    pointer-events: none;
+  }
+  .hero::after {
+    content: ''; position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 80px 80px;
+    mask-image: radial-gradient(ellipse 800px 600px at 50% 40%, black 30%, transparent 80%);
+    -webkit-mask-image: radial-gradient(ellipse 800px 600px at 50% 40%, black 30%, transparent 80%);
+    pointer-events: none;
+  }
+  .hero-grid {
+    position: relative; z-index: 1;
+    display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 60px;
+    align-items: center;
+  }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 6px 14px; border-radius: 100px;
+    background: rgba(124,58,237,0.1);
+    border: 1px solid rgba(124,58,237,0.3);
+    font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 600;
+    color: var(--brand-purple-light); letter-spacing: 0.02em;
+    margin-bottom: 26px;
+  }
+  .eyebrow .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--brand-purple-light);
+    box-shadow: 0 0 8px var(--brand-purple-light);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .4; } }
+
+  .hero h1 {
+    font-size: clamp(40px, 5.5vw, 66px);
+    font-weight: 800;
+    margin-bottom: 24px;
+    max-width: 580px;
+  }
+  .hero h1 .highlight {
+    background: var(--gradient-brand-light);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+  }
+  .hero p {
+    font-size: 18px;
+    color: var(--text-dim);
+    max-width: 540px;
+    margin-bottom: 36px;
+  }
+  .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 14px 24px; border-radius: 12px;
+    font-weight: 600; font-size: 15px;
+    transition: all .2s ease;
+    cursor: pointer;
+  }
+  .btn-primary {
+    background: var(--gradient-brand); color: #ffffff;
+    box-shadow: 0 10px 30px -10px var(--accent-glow);
+  }
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 40px -10px var(--accent-glow);
+  }
+  .btn-secondary {
+    background: var(--bg-card); color: var(--text);
+    border: 1px solid var(--line-strong);
+  }
+  .btn-secondary:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--brand-blue);
+  }
+  .btn svg { width: 16px; height: 16px; transition: transform .2s; }
+  .btn:hover svg { transform: translateX(3px); }
+
+  .hero-stats {
+    display: flex; gap: 40px;
+    margin-top: 56px;
+    padding-top: 36px;
+    border-top: 1px solid var(--line);
+  }
+  .stat-num {
+    font-family: 'Sora', sans-serif;
+    font-size: 36px; font-weight: 800;
+    background: var(--gradient-brand-light);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+  }
+  .stat-label { font-size: 13px; color: var(--text-mute); margin-top: 8px; font-weight: 500; }
+
+  /* Hero blueprint visual */
+  .hero-visual {
+    position: relative;
+    aspect-ratio: 4/5;
+    border-radius: var(--radius-lg);
+    background:
+      linear-gradient(135deg, #161e34 0%, #0d1320 100%);
+    border: 1px solid var(--line-strong);
+    padding: 28px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px -30px rgba(0,0,0,0.8);
+  }
+  .hero-visual::before {
+    content: '';
+    position: absolute; top: -120px; right: -120px;
+    width: 340px; height: 340px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(124,58,237,0.35), transparent 70%);
+  }
+  .hero-visual::after {
+    content: '';
+    position: absolute; bottom: -80px; left: -80px;
+    width: 240px; height: 240px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(37,99,235,0.25), transparent 70%);
+  }
+  .blueprint { position: relative; z-index: 1; height: 100%; display: flex; flex-direction: column; justify-content: space-between; }
+  .blueprint-tag {
+    display: inline-flex; padding: 5px 11px; border-radius: 6px;
+    background: rgba(124,58,237,0.15); color: var(--brand-purple-light);
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700;
+    align-self: flex-start;
+    border: 1px solid rgba(124,58,237,0.3);
+    letter-spacing: 0.05em;
+  }
+  .blueprint-svg { width: 100%; flex: 1; margin: 18px 0; }
+  .blueprint-info { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .blueprint-info-item {
+    background: rgba(255,255,255,0.03); padding: 14px;
+    border-radius: 12px; border: 1px solid var(--line);
+    backdrop-filter: blur(10px);
+  }
+  .blueprint-info-item .label { font-size: 10.5px; color: var(--text-mute); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; }
+  .blueprint-info-item .value {
+    font-family: 'JetBrains Mono', monospace; font-size: 14px;
+    color: var(--text); margin-top: 6px; font-weight: 600;
+  }
+
+  /* Drawing animation */
+  @keyframes draw {
+    from { stroke-dashoffset: 1000; }
+    to { stroke-dashoffset: 0; }
+  }
+  .blueprint-svg .animate-path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 3s ease-out forwards 0.5s;
+  }
+
+  /* ================= TRUST BAR ================= */
+  .trust {
+    padding: 36px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    background: rgba(0,0,0,0.2);
+  }
+  .trust-label {
+    text-align: center; color: var(--text-mute);
+    font-size: 11.5px; text-transform: uppercase;
+    letter-spacing: 0.25em; margin-bottom: 20px;
+    font-weight: 700;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .trust-items {
+    display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+    gap: 12px 36px;
+    color: var(--text-dim);
+    font-family: 'Sora', sans-serif; font-weight: 700; font-size: 15px;
+  }
+  .trust-items span {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 8px 14px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid var(--line);
+    transition: all .25s;
+  }
+  .trust-items span:hover {
+    border-color: var(--brand-blue);
+    color: var(--text);
+    transform: translateY(-2px);
+  }
+
+  /* ================= SECTIONS ================= */
+  section.section { padding: 110px 0; }
+  .section-head { text-align: center; max-width: 720px; margin: 0 auto 64px; }
+  .section-eyebrow {
+    display: inline-block; padding: 6px 14px; border-radius: 100px;
+    background: rgba(96,165,250,0.08);
+    border: 1px solid rgba(96,165,250,0.25);
+    font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 600;
+    color: var(--brand-blue-light); margin-bottom: 20px;
+  }
+  .section-head h2 {
+    font-size: clamp(32px, 4.2vw, 48px); font-weight: 700;
+    margin-bottom: 18px;
+    background: linear-gradient(180deg, #ffffff 0%, #b0bcd6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .section-head p { color: var(--text-dim); font-size: 17.5px; }
+
+  /* ================= SERVICES ================= */
+  .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .service-card {
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 30px;
+    transition: all .3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .service-card::before {
+    content: ''; position: absolute;
+    top: -1px; left: -1px; right: -1px; height: 2px;
+    background: var(--gradient-brand);
+    opacity: 0; transition: opacity .3s;
+  }
+  .service-card::after {
+    content: ''; position: absolute;
+    inset: 0;
+    background: radial-gradient(400px 200px at top right, rgba(124,58,237,0.06), transparent 60%);
+    opacity: 0; transition: opacity .3s;
+    pointer-events: none;
+  }
+  .service-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--line-strong);
+    background: var(--bg-card-hover);
+  }
+  .service-card:hover::before { opacity: 1; }
+  .service-card:hover::after { opacity: 1; }
+  .service-icon {
+    width: 56px; height: 56px; border-radius: 14px;
+    background: linear-gradient(135deg, rgba(37,99,235,0.18), rgba(124,58,237,0.08));
+    border: 1px solid rgba(124,58,237,0.3);
+    display: grid; place-items: center; color: var(--brand-purple-light);
+    margin-bottom: 22px;
+    position: relative;
+  }
+  .service-card h3 { font-size: 20px; margin-bottom: 12px; font-weight: 600; }
+  .service-card p { color: var(--text-dim); font-size: 14.5px; line-height: 1.65; }
+  .service-tag {
+    display: inline-block; padding: 4px 11px; margin-top: 18px;
+    border-radius: 6px;
+    background: rgba(37,99,235,0.1); color: var(--brand-blue-light);
+    font-size: 11px; font-weight: 700;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.05em;
+  }
+
+  /* ================= COURSES ================= */
+  .courses-section { background: var(--bg-elev); position: relative; }
+  .courses-section::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(900px 400px at 50% 0%, rgba(124,58,237,0.08), transparent 60%);
+    pointer-events: none;
+  }
+  .courses-section .container { position: relative; }
+  .courses-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .course-card {
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: all .3s ease;
+    cursor: pointer;
+    display: flex; flex-direction: column;
+  }
+  .course-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--brand-purple);
+    box-shadow: 0 20px 50px -15px rgba(124,58,237,0.3);
+  }
+  .course-thumb {
+    aspect-ratio: 16/10;
+    position: relative; overflow: hidden;
+    display: grid; place-items: center;
+  }
+  .course-thumb-1 { background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%); }
+  .course-thumb-2 { background: linear-gradient(135deg, #4c1d95 0%, #7c3aed 100%); }
+  .course-thumb-3 { background: linear-gradient(135deg, #0c4a6e 0%, #0284c7 100%); }
+  .course-thumb svg { width: 75%; height: 75%; opacity: 0.95; }
+  .course-thumb::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.4));
+  }
+  .course-level {
+    position: absolute; top: 14px; left: 14px;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(8px);
+    color: var(--brand-blue-light); font-size: 11px; font-weight: 700;
+    padding: 5px 11px; border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace; letter-spacing: 0.05em;
+    border: 1px solid rgba(96,165,250,0.3);
+    z-index: 1;
+  }
+  .course-duration {
+    position: absolute; top: 14px; right: 14px; z-index: 1;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(8px);
+    color: var(--text); font-size: 11px; font-weight: 600;
+    padding: 5px 11px; border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .course-body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
+  .course-body h3 { font-size: 19px; font-weight: 600; margin-bottom: 10px; }
+  .course-meta { display: flex; align-items: center; gap: 14px; color: var(--text-mute); font-size: 13px; margin-bottom: 14px; }
+  .course-meta .dot-sep { width: 3px; height: 3px; border-radius: 50%; background: var(--text-mute); }
+  .course-desc { color: var(--text-dim); font-size: 14px; line-height: 1.65; flex: 1; }
+  .course-footer {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 18px; margin-top: 18px;
+    border-top: 1px solid var(--line);
+  }
+  .course-badge {
+    font-size: 12px; padding: 4px 10px; border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace; font-weight: 600;
+  }
+  .badge-popular { background: rgba(245,158,11,0.12); color: #fbbf24; border: 1px solid rgba(245,158,11,0.3); }
+  .badge-new { background: rgba(16,185,129,0.12); color: #34d399; border: 1px solid rgba(16,185,129,0.3); }
+  .badge-cert { color: var(--text-mute); font-size: 13px; }
+  .course-cta {
+    color: var(--brand-purple-light); font-weight: 600; font-size: 14px;
+    display: inline-flex; align-items: center; gap: 6px; transition: gap .2s;
+  }
+  .course-card:hover .course-cta { gap: 10px; }
+
+  /* ================= ABOUT ================= */
+  .about-grid {
+    display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 70px;
+    align-items: center;
+  }
+  .about-photo {
+    aspect-ratio: 4/5;
+    border-radius: var(--radius-lg);
+    background: linear-gradient(135deg, #1a2238, #0d1320);
+    border: 1px solid var(--line-strong);
+    position: relative; overflow: hidden;
+    display: grid; place-items: center;
+  }
+  .about-photo::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(circle at 30% 30%, rgba(124,58,237,0.3), transparent 60%);
+  }
+  .about-photo svg { width: 65%; opacity: 0.95; position: relative; z-index: 1; }
+  .about-badge {
+    position: absolute; bottom: 24px; left: 24px; right: 24px;
+    background: rgba(10,15,26,0.85);
+    backdrop-filter: blur(14px);
+    padding: 18px;
+    border-radius: 14px;
+    border: 1px solid var(--line-strong);
+    z-index: 2;
+  }
+  .about-badge .name { font-family: 'Sora', sans-serif; font-weight: 700; font-size: 17px; line-height: 1.2; }
+  .about-badge .role { color: var(--text-dim); font-size: 13px; margin-top: 4px; }
+  .about-badge .credentials {
+    font-family: 'JetBrains Mono', monospace; font-size: 11.5px;
+    color: var(--brand-purple-light); margin-top: 8px;
+    display: flex; gap: 8px; flex-wrap: wrap;
+  }
+  .about-badge .credentials span {
+    padding: 2px 8px; border-radius: 4px;
+    background: rgba(124,58,237,0.1);
+    border: 1px solid rgba(124,58,237,0.25);
+  }
+
+  .about-content h2 {
+    font-size: clamp(30px, 3.6vw, 42px); margin-bottom: 22px;
+    background: linear-gradient(180deg, #ffffff 0%, #b0bcd6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .about-content > p { color: var(--text-dim); margin-bottom: 18px; font-size: 16.5px; }
+  .about-quote {
+    border-left: 3px solid var(--brand-purple);
+    padding: 18px 24px;
+    background: linear-gradient(90deg, rgba(124,58,237,0.08), transparent);
+    border-radius: 0 14px 14px 0;
+    font-style: italic; color: var(--text);
+    margin: 28px 0; font-size: 16px;
+    line-height: 1.6;
+  }
+  .about-features { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 30px; }
+  .about-feature { display: flex; gap: 14px; align-items: flex-start; }
+  .about-feature .check {
+    width: 26px; height: 26px; border-radius: 7px;
+    background: var(--gradient-brand);
+    color: #ffffff;
+    display: grid; place-items: center; flex-shrink: 0;
+    box-shadow: 0 4px 12px -4px var(--accent-glow);
+  }
+  .about-feature span { font-size: 14.5px; color: var(--text); line-height: 1.5; }
+
+  /* ================= PROCESS ================= */
+  .process-section { background: var(--bg-elev); position: relative; overflow: hidden; }
+  .process-section::before {
+    content: ''; position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+  }
+  .process-section .container { position: relative; }
+  .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .process-step {
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    position: relative;
+    transition: all .25s;
+  }
+  .process-step:hover {
+    transform: translateY(-4px);
+    border-color: var(--brand-blue);
+  }
+  .process-num {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace; font-size: 11.5px;
+    background: var(--gradient-brand);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    margin-bottom: 18px; letter-spacing: 0.12em;
+  }
+  .process-step h3 { font-size: 18px; margin-bottom: 10px; font-weight: 600; }
+  .process-step p { font-size: 14px; color: var(--text-dim); line-height: 1.6; }
+
+  /* ================= CTA BIG ================= */
+  .cta-big {
+    background: linear-gradient(135deg, #1a2238 0%, #0d1320 100%);
+    border-radius: var(--radius-xl);
+    padding: 80px 60px;
+    text-align: center;
+    border: 1px solid var(--line-strong);
+    position: relative; overflow: hidden;
+  }
+  .cta-big::before {
+    content: ''; position: absolute; inset: 0;
+    background:
+      radial-gradient(500px 300px at 20% 20%, rgba(37,99,235,0.2), transparent 60%),
+      radial-gradient(500px 300px at 80% 80%, rgba(124,58,237,0.18), transparent 60%);
+  }
+  .cta-big::after {
+    content: ''; position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+    background-size: 40px 40px;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%);
+  }
+  .cta-big > * { position: relative; z-index: 1; }
+  .cta-big h2 {
+    font-size: clamp(30px, 4vw, 46px); margin-bottom: 18px;
+    background: linear-gradient(180deg, #ffffff 0%, #b0bcd6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .cta-big p { color: var(--text-dim); margin-bottom: 36px; font-size: 17.5px; max-width: 560px; margin-left: auto; margin-right: auto; }
+  .cta-big .hero-actions { justify-content: center; }
+
+  /* ================= CONTACT ================= */
+  .contact-section { padding: 90px 0 50px; }
+  .contact-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
+    margin-bottom: 60px;
+  }
+  .contact-info h2 {
+    font-size: 38px; margin-bottom: 22px;
+    background: linear-gradient(180deg, #ffffff 0%, #b0bcd6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .contact-info > p { color: var(--text-dim); margin-bottom: 32px; font-size: 16.5px; }
+  .contact-list { list-style: none; display: flex; flex-direction: column; gap: 16px; }
+  .contact-item {
+    display: flex; gap: 16px; align-items: center;
+    padding: 14px 16px;
+    border-radius: 14px;
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    transition: all .25s;
+  }
+  .contact-item:hover {
+    border-color: var(--brand-blue);
+    transform: translateX(4px);
+  }
+  .contact-item .icon-wrap {
+    width: 46px; height: 46px; border-radius: 12px;
+    background: linear-gradient(135deg, rgba(37,99,235,0.15), rgba(124,58,237,0.05));
+    border: 1px solid rgba(124,58,237,0.25);
+    display: grid; place-items: center; color: var(--brand-purple-light);
+    flex-shrink: 0;
+  }
+  .contact-item .label { font-size: 11.5px; color: var(--text-mute); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; }
+  .contact-item .value { font-size: 15px; color: var(--text); font-weight: 500; margin-top: 2px; }
+
+  /* Contact form */
+  .contact-form {
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+  }
+  .contact-form h3 { font-size: 22px; margin-bottom: 6px; font-weight: 600; }
+  .contact-form .form-intro { color: var(--text-dim); font-size: 14px; margin-bottom: 24px; }
+  .form-row { margin-bottom: 16px; }
+  .form-row label {
+    display: block; font-size: 12px; color: var(--text-mute);
+    text-transform: uppercase; letter-spacing: 0.08em;
+    margin-bottom: 8px; font-weight: 600;
+  }
+  .form-row input, .form-row textarea, .form-row select {
+    width: 100%; padding: 12px 14px;
+    background: var(--bg);
+    border: 1px solid var(--line-strong);
+    border-radius: 10px;
+    color: var(--text); font-size: 15px;
+    font-family: inherit;
+    transition: border-color .2s, box-shadow .2s;
+  }
+  .form-row input:focus, .form-row textarea:focus, .form-row select:focus {
+    outline: none;
+    border-color: var(--brand-purple);
+    box-shadow: 0 0 0 3px rgba(124,58,237,0.15);
+  }
+  .form-row textarea { resize: vertical; min-height: 100px; }
+  .form-submit {
+    width: 100%;
+    padding: 14px;
+    background: var(--gradient-brand); color: white;
+    border-radius: 10px;
+    font-weight: 600; font-size: 15px;
+    transition: all .2s;
+    box-shadow: 0 6px 20px -6px var(--accent-glow);
+    cursor: pointer;
+  }
+  .form-submit:hover { transform: translateY(-2px); box-shadow: 0 12px 28px -8px var(--accent-glow); }
+
+  /* ================= FOOTER ================= */
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 50px 0 32px;
+    background: var(--bg-elev);
+  }
+  .footer-grid {
+    display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px;
+    margin-bottom: 40px;
+  }
+  .footer-brand p { color: var(--text-dim); font-size: 14px; margin-top: 16px; line-height: 1.6; max-width: 280px; }
+  .footer-col h4 {
+    font-family: 'JetBrains Mono', monospace; font-size: 11.5px;
+    color: var(--brand-blue-light); text-transform: uppercase;
+    letter-spacing: 0.1em; margin-bottom: 18px; font-weight: 600;
+  }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .footer-col a { color: var(--text-dim); font-size: 14px; transition: color .2s; }
+  .footer-col a:hover { color: var(--text); }
+  .footer-bottom {
+    border-top: 1px solid var(--line);
+    padding-top: 24px;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 16px;
+  }
+  .footer-bottom p { color: var(--text-mute); font-size: 13px; }
+  .socials { display: flex; gap: 10px; }
+  .socials a {
+    width: 38px; height: 38px; border-radius: 10px;
+    background: var(--bg-card); border: 1px solid var(--line);
+    display: grid; place-items: center; color: var(--text-dim);
+    transition: all .2s;
+  }
+  .socials a:hover {
+    color: var(--brand-purple-light); border-color: var(--brand-purple);
+    transform: translateY(-2px);
+  }
+
+  /* ================= FLOATING WHATSAPP ================= */
+  .wa-float {
+    position: fixed; bottom: 24px; right: 24px;
+    width: 60px; height: 60px; border-radius: 50%;
+    background: #25D366; color: white;
+    display: grid; place-items: center;
+    box-shadow: 0 12px 32px -8px rgba(37,211,102,0.7), 0 0 0 4px rgba(37,211,102,0.15);
+    z-index: 50;
+    transition: transform .2s;
+    animation: floatPulse 2.5s infinite;
+  }
+  @keyframes floatPulse {
+    0%, 100% { box-shadow: 0 12px 32px -8px rgba(37,211,102,0.7), 0 0 0 4px rgba(37,211,102,0.15); }
+    50% { box-shadow: 0 12px 32px -8px rgba(37,211,102,0.9), 0 0 0 12px rgba(37,211,102,0.05); }
+  }
+  .wa-float:hover { transform: scale(1.1); }
+
+  /* ================= ANIMATIONS ================= */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity .8s ease, transform .8s ease;
+  }
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ================= RESPONSIVE ================= */
+  @media (max-width: 960px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 50px; }
+    .hero-visual { max-width: 480px; margin: 0 auto; }
+    .services-grid, .courses-grid, .process-grid { grid-template-columns: repeat(2, 1fr); }
+    .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 50px; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .nav-links { display: none; }
+    .menu-btn { display: grid; place-items: center; }
+    section.section { padding: 80px 0; }
+    .cta-big { padding: 60px 28px; }
+    .hero-stats { gap: 24px; flex-wrap: wrap; }
+  }
+  @media (max-width: 600px) {
+    .services-grid, .courses-grid, .process-grid { grid-template-columns: 1fr; }
+    .about-features { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .stat-num { font-size: 28px; }
+    .hero { padding: 60px 0 70px; }
+    .container { padding: 0 20px; }
+    .nav-cta span { display: none; }
+    .logo-text small { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="#" class="logo">
+      <div class="logo-mark">E</div>
+      <div class="logo-text">
+        <strong>EMUNAH</strong>
+        <small>Ingeniería · Construcción</small>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#cursos">Cursos</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <a href="#contacto" class="nav-cta">
+      <span>Cotizar proyecto</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+    <button class="menu-btn" aria-label="Menú" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">
+        <span class="dot"></span> 11 años construyendo en el norte del Perú
+      </div>
+      <h1>
+        Ingeniería real que <span class="highlight">no se queda en el papel.</span>
+      </h1>
+      <p>
+        Soluciones integrales en proyectos, ejecución de obras y capacitación profesional. Expedientes técnicos rigurosos, supervisión de obra y cursos especializados aplicados al campo, desde Piura para todo el Perú.
+      </p>
+      <div class="hero-actions">
+        <a href="#servicios" class="btn btn-primary">
+          Ver servicios
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#cursos" class="btn btn-secondary">Cursos virtuales</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-num">11+</div>
+          <div class="stat-label">Años de experiencia</div>
+        </div>
+        <div>
+          <div class="stat-num">120+</div>
+          <div class="stat-label">Proyectos ejecutados</div>
+        </div>
+        <div>
+          <div class="stat-num">500+</div>
+          <div class="stat-label">Profesionales capacitados</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="blueprint">
+        <span class="blueprint-tag">// EXPEDIENTE TÉCNICO</span>
+        <svg class="blueprint-svg" viewBox="0 0 320 280" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+              <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(124,58,237,0.12)" stroke-width="0.5"/>
+            </pattern>
+          </defs>
+          <rect width="320" height="280" fill="url(#grid)"/>
+          <rect x="40" y="60" width="240" height="180" fill="none" stroke="#a78bfa" stroke-width="2" class="animate-path"/>
+          <line x1="120" y1="60" x2="120" y2="240" stroke="#60a5fa" stroke-width="1.2" stroke-dasharray="3,3"/>
+          <line x1="200" y1="60" x2="200" y2="240" stroke="#60a5fa" stroke-width="1.2" stroke-dasharray="3,3"/>
+          <line x1="40" y1="150" x2="280" y2="150" stroke="#60a5fa" stroke-width="1.2" stroke-dasharray="3,3"/>
+          <path d="M 120 150 A 20 20 0 0 1 140 130" fill="none" stroke="#60a5fa" stroke-width="1"/>
+          <path d="M 200 150 A 20 20 0 0 1 220 130" fill="none" stroke="#60a5fa" stroke-width="1"/>
+          <circle cx="40" cy="60" r="4" fill="#a78bfa"/>
+          <circle cx="280" cy="60" r="4" fill="#a78bfa"/>
+          <circle cx="40" cy="240" r="4" fill="#a78bfa"/>
+          <circle cx="280" cy="240" r="4" fill="#a78bfa"/>
+          <circle cx="120" cy="150" r="3" fill="#60a5fa"/>
+          <circle cx="200" cy="150" r="3" fill="#60a5fa"/>
+          <text x="160" y="48" text-anchor="middle" fill="#9aa5bd" font-family="JetBrains Mono" font-size="10">12.40 m</text>
+          <line x1="50" y1="50" x2="270" y2="50" stroke="#9aa5bd" stroke-width="0.5"/>
+          <text x="25" y="153" text-anchor="middle" fill="#9aa5bd" font-family="JetBrains Mono" font-size="10" transform="rotate(-90 25 153)">9.20 m</text>
+          <text x="50" y="265" fill="#6b7689" font-family="JetBrains Mono" font-size="9">PLANTA NIVEL 01 · ESC 1:50</text>
+        </svg>
+        <div class="blueprint-info">
+          <div class="blueprint-info-item">
+            <div class="label">Área techada</div>
+            <div class="value">114.08 m²</div>
+          </div>
+          <div class="blueprint-info-item">
+            <div class="label">Estado</div>
+            <div class="value" style="color: #a78bfa;">● En revisión</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRUST BAR ================= -->
+<div class="trust">
+  <div class="container">
+    <div class="trust-label">Trabajamos bajo normativa peruana</div>
+    <div class="trust-items">
+      <span>📐 RNE</span>
+      <span>🏛️ MTC</span>
+      <span>🏗️ E.030 Sismorresistente</span>
+      <span>📊 Sistema S10</span>
+      <span>🎓 CIP Habilitado</span>
+    </div>
+  </div>
+</div>
+
+<!-- ================= SERVICIOS ================= -->
+<section id="servicios" class="section">
+  <div class="container">
+    <div class="section-head fade-in">
+      <span class="section-eyebrow">// SERVICIOS</span>
+      <h2>Servicios técnicos integrales para tu obra</h2>
+      <p>Desde la consultoría inicial hasta la materialización del proyecto. Cada servicio respaldado por 11 años de experiencia real en el campo peruano.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card fade-in">
+        <div class="service-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+        </div>
+        <h3>Expedientes Técnicos</h3>
+        <p>Elaboración rigurosa de expedientes técnicos para edificación pública y privada con pleno cumplimiento del RNE.</p>
+        <span class="service-tag">CONSULTORÍA</span>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 22h20M5 22V10l7-7 7 7v12M9 22v-6h6v6"/></svg>
+        </div>
+        <h3>Ejecución de Obras</h3>
+        <p>Construcción de obras civiles con control de calidad, eficiencia estructural y cumplimiento de plazos contractuales.</p>
+        <span class="service-tag">CAMPO</span>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </div>
+        <h3>Supervisión de Obras</h3>
+        <p>Verificación técnica y administrativa para garantizar que la obra cumpla con planos, especificaciones y normativa.</p>
+        <span class="service-tag">CONTROL</span>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>Estudios de Suelos</h3>
+        <p>Mecánica de suelos para definir capacidad portante, tipo de cimentación y parámetros de diseño geotécnico.</p>
+        <span class="service-tag">GEOTECNIA</span>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6 9 3l6 3 6-3v15l-6 3-6-3-6 3V6zM9 3v15M15 6v15"/></svg>
+        </div>
+        <h3>Levantamientos Topográficos</h3>
+        <p>Topografía con equipos de precisión, generación de planos de planta, perfiles y secciones para tu proyecto.</p>
+        <span class="service-tag">TOPOGRAFÍA</span>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/></svg>
+        </div>
+        <h3>Peritajes Estructurales</h3>
+        <p>Evaluación técnica de patologías, determinación de causas y propuesta de soluciones para edificaciones existentes.</p>
+        <span class="service-tag">DIAGNÓSTICO</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CURSOS ================= -->
+<section id="cursos" class="section courses-section">
+  <div class="container">
+    <div class="section-head fade-in">
+      <span class="section-eyebrow">// CAPACITACIÓN PROFESIONAL</span>
+      <h2>Cursos virtuales con experiencia real de campo</h2>
+      <p>La ingeniería no se aprende sólo en libros. Capacitamos con metodologías prácticas y herramientas que se usan en obra todos los días.</p>
+    </div>
+
+    <div class="courses-grid">
+      <a href="#contacto" class="course-card fade-in">
+        <div class="course-thumb course-thumb-1">
+          <span class="course-level">INTERMEDIO</span>
+          <span class="course-duration">12 h</span>
+          <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+            <rect x="20" y="30" width="160" height="70" fill="none" stroke="#a78bfa" stroke-width="2"/>
+            <line x1="20" y1="60" x2="180" y2="60" stroke="#60a5fa" stroke-width="1.2" stroke-dasharray="3,3"/>
+            <line x1="80" y1="30" x2="80" y2="100" stroke="#60a5fa" stroke-width="1.2" stroke-dasharray="3,3"/>
+            <line x1="130" y1="30" x2="130" y2="100" stroke="#60a5fa" stroke-width="1.2" stroke-dasharray="3,3"/>
+            <text x="100" y="22" text-anchor="middle" fill="#a78bfa" font-family="JetBrains Mono" font-size="10">160 m²</text>
+            <circle cx="20" cy="30" r="3" fill="#a78bfa"/>
+            <circle cx="180" cy="30" r="3" fill="#a78bfa"/>
+            <circle cx="20" cy="100" r="3" fill="#a78bfa"/>
+            <circle cx="180" cy="100" r="3" fill="#a78bfa"/>
+          </svg>
+        </div>
+        <div class="course-body">
+          <h3>Metrados en Edificaciones</h3>
+          <div class="course-meta">
+            <span>📐 12 horas</span>
+            <span class="dot-sep"></span>
+            <span>32 clases</span>
+          </div>
+          <p class="course-desc">Aprende a cuantificar partidas de obra desde estructuras hasta acabados, siguiendo el Reglamento de Metrados oficial.</p>
+          <div class="course-footer">
+            <span class="badge-cert">Certificación incluida</span>
+            <span class="course-cta">Ver curso →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="#contacto" class="course-card fade-in">
+        <div class="course-thumb course-thumb-2">
+          <span class="course-level">AVANZADO</span>
+          <span class="course-duration">18 h</span>
+          <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+            <rect x="30" y="20" width="140" height="80" fill="none" stroke="#c4b5fd" stroke-width="2" rx="4"/>
+            <rect x="40" y="30" width="120" height="12" fill="rgba(196,181,253,0.3)"/>
+            <rect x="40" y="48" width="80" height="8" fill="rgba(196,181,253,0.5)"/>
+            <rect x="40" y="60" width="100" height="8" fill="rgba(196,181,253,0.4)"/>
+            <rect x="40" y="72" width="60" height="8" fill="rgba(196,181,253,0.6)"/>
+            <rect x="40" y="84" width="90" height="8" fill="rgba(196,181,253,0.4)"/>
+            <text x="100" y="113" text-anchor="middle" fill="#c4b5fd" font-family="JetBrains Mono" font-size="10">S10 · PRESUPUESTO</text>
+          </svg>
+        </div>
+        <div class="course-body">
+          <h3>Sistema S10 + Costos y Presupuestos</h3>
+          <div class="course-meta">
+            <span>📐 18 horas</span>
+            <span class="dot-sep"></span>
+            <span>45 clases</span>
+          </div>
+          <p class="course-desc">Domina el software S10 desde cero: análisis de precios unitarios, presupuesto, cronograma valorizado y fórmulas polinómicas.</p>
+          <div class="course-footer">
+            <span class="course-badge badge-popular">⭐ MÁS VENDIDO</span>
+            <span class="course-cta">Ver curso →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="#contacto" class="course-card fade-in">
+        <div class="course-thumb course-thumb-3">
+          <span class="course-level">BÁSICO</span>
+          <span class="course-duration">10 h</span>
+          <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 20 100 Q 50 40, 100 60 T 180 50" fill="none" stroke="#60a5fa" stroke-width="2.5"/>
+            <circle cx="20" cy="100" r="4" fill="#60a5fa"/>
+            <circle cx="100" cy="60" r="4" fill="#60a5fa"/>
+            <circle cx="180" cy="50" r="4" fill="#60a5fa"/>
+            <line x1="10" y1="20" x2="10" y2="110" stroke="#60a5fa" stroke-width="1" opacity="0.3"/>
+            <line x1="10" y1="110" x2="190" y2="110" stroke="#60a5fa" stroke-width="1" opacity="0.3"/>
+            <text x="100" y="20" text-anchor="middle" fill="#60a5fa" font-family="JetBrains Mono" font-size="10">CURVA "S"</text>
+          </svg>
+        </div>
+        <div class="course-body">
+          <h3>Programación de Obras con MS Project</h3>
+          <div class="course-meta">
+            <span>📐 10 horas</span>
+            <span class="dot-sep"></span>
+            <span>28 clases</span>
+          </div>
+          <p class="course-desc">Cronogramas Gantt, ruta crítica, curva S y control de avance físico-financiero aplicado a proyectos reales.</p>
+          <div class="course-footer">
+            <span class="course-badge badge-new">🆕 NUEVO</span>
+            <span class="course-cta">Ver curso →</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div style="text-align: center; margin-top: 48px;">
+      <a href="https://wa.me/51967247976?text=Hola%20Freddy,%20me%20interesa%20ver%20todos%20los%20cursos%20que%20ofreces" class="btn btn-secondary">
+        Consultar por más cursos
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NOSOTROS ================= -->
+<section id="nosotros" class="section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-photo fade-in">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="100" cy="80" rx="55" ry="40" fill="#7c3aed"/>
+          <rect x="40" y="78" width="120" height="8" fill="#2563eb"/>
+          <rect x="92" y="50" width="16" height="6" fill="#0a0f1a"/>
+          <circle cx="100" cy="125" r="32" fill="#d4a574"/>
+          <path d="M 50 200 Q 50 160 100 155 Q 150 160 150 200 Z" fill="#1a2238"/>
+          <rect x="60" y="170" width="80" height="4" fill="#a78bfa"/>
+          <rect x="60" y="180" width="80" height="4" fill="#a78bfa"/>
+          <circle cx="92" cy="123" r="2" fill="#0a0f1a"/>
+          <circle cx="108" cy="123" r="2" fill="#0a0f1a"/>
+          <path d="M 92 138 Q 100 142 108 138" fill="none" stroke="#0a0f1a" stroke-width="1.5"/>
+        </svg>
+        <div class="about-badge">
+          <div class="name">Ing. Freddy Jahaziel Rodriguez Cervera</div>
+          <div class="role">Ingeniero Civil · Fundador EMUNAH</div>
+          <div class="credentials">
+            <span>11 años de experiencia</span>
+            <span>CIP Habilitado</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-content fade-in">
+        <span class="section-eyebrow">// SOBRE EMUNAH</span>
+        <h2>11 años de ingeniería aplicada al campo peruano</h2>
+        <p>
+          Soy el Ing. Freddy Jahaziel Rodriguez Cervera, fundador de EMUNAH Ingeniería y Construcción E.I.R.L. Mi trayectoria abarca más de una década liderando proyectos de ingeniería civil que van desde la consultoría hasta la materialización de la obra.
+        </p>
+        <p>
+          Me especializo en expedientes técnicos rigurosos, supervisión de obras públicas y privadas, y formación de nuevos profesionales del rubro a través de cursos virtuales aplicados.
+        </p>
+        <div class="about-quote">
+          "La ingeniería no se queda en el papel. Trasladamos esa experiencia real de campo a las aulas, capacitando a ingenieros y estudiantes con metodologías prácticas para los retos reales del Perú."
+        </div>
+
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="check">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>
+            </div>
+            <span>Cumplimiento normativo del RNE</span>
+          </div>
+          <div class="about-feature">
+            <div class="check">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>
+            </div>
+            <span>Eficiencia estructural garantizada</span>
+          </div>
+          <div class="about-feature">
+            <div class="check">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>
+            </div>
+            <span>Obras públicas y privadas</span>
+          </div>
+          <div class="about-feature">
+            <div class="check">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>
+            </div>
+            <span>Capacitación con casos reales</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESO ================= -->
+<section id="proceso" class="section process-section">
+  <div class="container">
+    <div class="section-head fade-in">
+      <span class="section-eyebrow">// METODOLOGÍA</span>
+      <h2>Cómo trabajamos en cada proyecto</h2>
+      <p>Un proceso claro, transparente y verificable de principio a fin.</p>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-step fade-in">
+        <div class="process-num">PASO 01</div>
+        <h3>Diagnóstico</h3>
+        <p>Reunión técnica para entender alcance, terreno, presupuesto y cronograma del proyecto.</p>
+      </div>
+      <div class="process-step fade-in">
+        <div class="process-num">PASO 02</div>
+        <h3>Estudios previos</h3>
+        <p>Levantamiento topográfico, mecánica de suelos y verificación de parámetros normativos.</p>
+      </div>
+      <div class="process-step fade-in">
+        <div class="process-num">PASO 03</div>
+        <h3>Expediente técnico</h3>
+        <p>Memoria, especificaciones, planos, metrados, presupuesto y cronograma valorizado.</p>
+      </div>
+      <div class="process-step fade-in">
+        <div class="process-num">PASO 04</div>
+        <h3>Ejecución y supervisión</h3>
+        <p>Construcción con control de calidad y supervisión técnica en cada partida.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA BIG ================= -->
+<section style="padding: 60px 0;">
+  <div class="container">
+    <div class="cta-big fade-in">
+      <span class="section-eyebrow">// CONVERSEMOS</span>
+      <h2>¿Tienes un proyecto en mente?</h2>
+      <p>Cotiza tu expediente técnico, ejecución de obra o asesoría especializada. Respondemos en menos de 24 horas.</p>
+      <div class="hero-actions">
+        <a href="#contacto" class="btn btn-primary">
+          Solicitar cotización
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://wa.me/51967247976?text=Hola%20Freddy,%20me%20interesa%20cotizar%20un%20proyecto%20con%20EMUNAH" class="btn btn-secondary">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.515 5.26l.36.572-1.001 3.66 3.615-1.191z"/></svg>
+          WhatsApp directo
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACTO ================= -->
+<section id="contacto" class="contact-section">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info fade-in">
+        <span class="section-eyebrow">// CONTACTO</span>
+        <h2>Hablemos de tu obra</h2>
+        <p>Estamos en Piura, atendiendo proyectos en todo el norte del Perú. Escríbenos por el canal que prefieras.</p>
+
+        <ul class="contact-list">
+          <li class="contact-item">
+            <div class="icon-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="label">WhatsApp / Teléfono</div>
+              <div class="value">+51 967 247 976</div>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="label">Correo</div>
+              <div class="value">freddy_jahaziel@hotmail.com</div>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="label">Ubicación</div>
+              <div class="value">Piura, Perú</div>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <div class="label">Horario</div>
+              <div class="value">Lun – Sáb · 8:00 a.m – 6:00 p.m</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form fade-in" action="https://formspree.io/f/REEMPLAZAR_TU_ID" method="POST">
+        <h3>Solicita una cotización</h3>
+        <p class="form-intro">Cuéntanos sobre tu proyecto y te respondemos en menos de 24 horas.</p>
+
+        <div class="form-row">
+          <label>Nombre completo</label>
+          <input type="text" name="nombre" required placeholder="Tu nombre" />
+        </div>
+        <div class="form-row">
+          <label>Correo o WhatsApp</label>
+          <input type="text" name="contacto" required placeholder="correo@ejemplo.com o +51..." />
+        </div>
+        <div class="form-row">
+          <label>Tipo de servicio</label>
+          <select name="servicio" required>
+            <option value="">Selecciona un servicio</option>
+            <option>Expediente Técnico</option>
+            <option>Ejecución de Obra</option>
+            <option>Supervisión de Obra</option>
+            <option>Estudios de Suelos</option>
+            <option>Levantamiento Topográfico</option>
+            <option>Peritaje Estructural</option>
+            <option>Cursos virtuales</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label>Cuéntanos sobre tu proyecto</label>
+          <textarea name="mensaje" required placeholder="Tipo de proyecto, ubicación, plazos estimados..."></textarea>
+        </div>
+        <button type="submit" class="form-submit">Enviar solicitud →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <div class="logo-mark">E</div>
+          <div class="logo-text">
+            <strong>EMUNAH</strong>
+            <small>Ingeniería · Construcción</small>
+          </div>
+        </a>
+        <p>Empresa peruana de ingeniería civil con 11 años transformando proyectos en obras reales en el norte del Perú.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#servicios">Expedientes Técnicos</a></li>
+          <li><a href="#servicios">Ejecución de Obras</a></li>
+          <li><a href="#servicios">Supervisión</a></li>
+          <li><a href="#servicios">Estudios de Suelos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Capacitación</h4>
+        <ul>
+          <li><a href="#cursos">Metrados</a></li>
+          <li><a href="#cursos">Sistema S10</a></li>
+          <li><a href="#cursos">MS Project</a></li>
+          <li><a href="#cursos">Todos los cursos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#proceso">Metodología</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="https://wa.me/51967247976">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 EMUNAH Ingeniería y Construcción E.I.R.L. · Todos los derechos reservados</p>
+      <div class="socials">
+        <a href="#" aria-label="Facebook">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></svg>
+        </a>
+        <a href="#" aria-label="YouTube">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/51967247976?text=Hola%20Freddy,%20vengo%20de%20tu%20web%20y%20me%20interesa%20conversar%20sobre%20un%20proyecto" class="wa-float" aria-label="Contactar por WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.515 5.26l.36.572-1.001 3.66 3.615-1.191zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413z"/></svg>
+</a>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 60);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
