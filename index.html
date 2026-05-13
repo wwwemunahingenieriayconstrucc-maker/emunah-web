@@ -514,6 +514,14 @@
     background: radial-gradient(circle at 30% 30%, rgba(124,58,237,0.3), transparent 60%);
   }
   .about-photo svg { width: 65%; opacity: 0.95; position: relative; z-index: 1; }
+  .about-photo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    z-index: 1;
+  }
   .about-badge {
     position: absolute; bottom: 24px; left: 24px; right: 24px;
     background: rgba(10,15,26,0.85);
@@ -1108,38 +1116,38 @@
   <div class="container">
     <div class="about-grid">
       <div class="about-photo fade-in">
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <ellipse cx="100" cy="80" rx="55" ry="40" fill="#7c3aed"/>
-          <rect x="40" y="78" width="120" height="8" fill="#2563eb"/>
-          <rect x="92" y="50" width="16" height="6" fill="#0a0f1a"/>
-          <circle cx="100" cy="125" r="32" fill="#d4a574"/>
-          <path d="M 50 200 Q 50 160 100 155 Q 150 160 150 200 Z" fill="#1a2238"/>
-          <rect x="60" y="170" width="80" height="4" fill="#a78bfa"/>
-          <rect x="60" y="180" width="80" height="4" fill="#a78bfa"/>
-          <circle cx="92" cy="123" r="2" fill="#0a0f1a"/>
-          <circle cx="108" cy="123" r="2" fill="#0a0f1a"/>
-          <path d="M 92 138 Q 100 142 108 138" fill="none" stroke="#0a0f1a" stroke-width="1.5"/>
-        </svg>
+        <img
+          id="aboutFoto"
+          class="about-photo-img"
+          src="/images/screenshot-2026-05-13-011918.png"
+          alt="Ing. Freddy Jahaziel Rodriguez Cervera"
+          loading="lazy"
+        />
+
         <div class="about-badge">
-          <div class="name">Ing. Freddy Jahaziel Rodriguez Cervera</div>
-          <div class="role">Ingeniero Civil · Fundador EMUNAH</div>
+          <div id="aboutNombre" class="name">Ing. Freddy Jahaziel Rodriguez Cervera</div>
+          <div id="aboutCargo" class="role">Ingeniero Civil · Fundador EMUNAH</div>
           <div class="credentials">
-            <span>11 años de experiencia</span>
-            <span>CIP Habilitado</span>
+            <span id="aboutCredencial1">11 años de experiencia</span>
+            <span id="aboutCredencial2">CIP Habilitado</span>
           </div>
         </div>
       </div>
 
       <div class="about-content fade-in">
         <span class="section-eyebrow">// SOBRE EMUNAH</span>
-        <h2>11 años de ingeniería aplicada al campo peruano</h2>
-        <p>
+
+        <h2 id="aboutTitulo">11 años de ingeniería aplicada al campo peruano</h2>
+
+        <p id="aboutParrafo1">
           Soy el Ing. Freddy Jahaziel Rodriguez Cervera, fundador de EMUNAH Ingeniería y Construcción E.I.R.L. Mi trayectoria abarca más de una década liderando proyectos de ingeniería civil que van desde la consultoría hasta la materialización de la obra.
         </p>
-        <p>
+
+        <p id="aboutParrafo2">
           Me especializo en expedientes técnicos rigurosos, supervisión de obras públicas y privadas, y formación de nuevos profesionales del rubro a través de cursos virtuales aplicados.
         </p>
-        <div class="about-quote">
+
+        <div id="aboutCita" class="about-quote">
           "La ingeniería no se queda en el papel. Trasladamos esa experiencia real de campo a las aulas, capacitando a ingenieros y estudiantes con metodologías prácticas para los retos reales del Perú."
         </div>
 
@@ -1150,18 +1158,21 @@
             </div>
             <span>Cumplimiento normativo del RNE</span>
           </div>
+
           <div class="about-feature">
             <div class="check">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>
             </div>
             <span>Eficiencia estructural garantizada</span>
           </div>
+
           <div class="about-feature">
             <div class="check">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>
             </div>
             <span>Obras públicas y privadas</span>
           </div>
+
           <div class="about-feature">
             <div class="check">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>
@@ -1383,6 +1394,55 @@
 <a href="https://wa.me/51967247976?text=Hola%20Freddy,%20vengo%20de%20tu%20web%20y%20me%20interesa%20conversar%20sobre%20un%20proyecto" class="wa-float" aria-label="Contactar por WhatsApp">
   <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.515 5.26l.36.572-1.001 3.66 3.615-1.191zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413z"/></svg>
 </a>
+
+
+<script>
+  async function cargarSeccionNosotros() {
+    try {
+      const respuesta = await fetch("/data/nosotros.json", {
+        cache: "no-store"
+      });
+
+      if (!respuesta.ok) {
+        console.warn("No se pudo cargar data/nosotros.json");
+        return;
+      }
+
+      const nosotros = await respuesta.json();
+
+      const setTexto = (id, valor) => {
+        const elemento = document.getElementById(id);
+        if (elemento && valor) {
+          elemento.textContent = valor;
+        }
+      };
+
+      const foto = document.getElementById("aboutFoto");
+
+      if (foto && nosotros.foto) {
+        foto.src = nosotros.foto.startsWith("/")
+          ? nosotros.foto
+          : "/" + nosotros.foto;
+
+        foto.alt = nosotros.nombre_completo || "Foto profesional";
+      }
+
+      setTexto("aboutNombre", nosotros.nombre_completo);
+      setTexto("aboutCargo", nosotros.cargo);
+      setTexto("aboutCredencial1", nosotros.credencial1);
+      setTexto("aboutCredencial2", nosotros.credencial2);
+      setTexto("aboutTitulo", nosotros.titulo);
+      setTexto("aboutParrafo1", nosotros.parrafo1);
+      setTexto("aboutParrafo2", nosotros.parrafo2);
+      setTexto("aboutCita", nosotros.cita);
+
+    } catch (error) {
+      console.warn("Error cargando la sección Nosotros:", error);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", cargarSeccionNosotros);
+</script>
 
 <script>
   const observer = new IntersectionObserver((entries) => {
